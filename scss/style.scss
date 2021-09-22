@@ -1,0 +1,232 @@
+    @import 'util';
+    @import 'config';
+
+    .container {
+        width: 100%;
+
+        div.about {
+            background-image: $banner-image;
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding-top: 30em;
+            padding-bottom: 3em;
+
+            div.flex-center {
+                display: grid;
+                grid-template-columns: 30% 50%;
+                justify-content: space-evenly;
+
+
+                h1 {
+                    @extend %hti;
+                    margin-top: 1.5em;
+                    text-align: right;
+                }
+
+                p {
+                    background-color: $white;
+                    padding: 2.5em 1em;
+                 
+                }
+            }
+
+
+        }
+
+        div.text {
+            @extend %bg;
+            padding: 7em;
+
+            p.big {
+                line-height: 1.5em;
+                font-style: italic;
+                font-size: 1.3em;
+                padding-bottom: 1em;
+
+                span {
+                    font-size: 3em;
+                    font-weight: 800;
+                }
+            }
+
+            p.norm {
+                width: 50%;
+                text-align: justify;
+            }
+        }
+
+        .gallery {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        div.coming {
+            @extend %bg;
+            padding: 3em;
+            text-align: center;
+
+            h1 {
+                @extend %hti;
+                margin-bottom: 0.5em;
+            }
+
+            p {
+                margin-bottom: 2.5em;
+            }
+
+
+        }
+
+        div.article {
+            padding: 3em;
+            display: grid;
+            grid-template-columns: 50% 50%;
+
+            img {
+                width: 60%;
+                margin: 0 auto;
+            }
+
+            div {
+
+                p {
+                    line-height: 1.6em;
+                }
+
+                h2 {
+                    margin-top: 1em;
+                    font-size: 2em;
+                    font-family: $about-font;
+                    color: rgb(186, 65, 65);
+                    font-style: italic;
+                    font-weight: 400;
+                }
+            }
+
+        }
+
+        div.spring-collection {
+            padding: 3em 5em 1em;
+            @extend %bg;
+
+            h1 {
+                @extend %hti;
+                text-align: center;
+                margin-bottom: 1em;
+            }
+
+            div {
+                display: grid;
+                grid-template-columns: auto auto auto auto;
+                grid-column-gap: 1em;
+
+                img {
+                    height: 100%;
+                }
+            }
+
+            img {
+                margin: 0 auto;
+            }
+
+            section {
+                display: grid;
+                justify-content: center;
+            }
+        }
+
+        div.sample-product {
+            display: grid;
+            grid-template-columns: 45% 45%;
+            padding-top: 3em;
+            padding-bottom: 3em;
+            justify-content: space-evenly;
+
+            div.sample {
+                display: grid;
+                grid-template-columns: 45% 45%;
+                justify-content: space-evenly;
+
+            }
+
+            div.product {
+                padding-top: 2em;
+
+                h3 {
+                    font-size: 2em;
+                    padding-bottom: 1em;
+                    font-weight: 400;
+                }
+
+                p {
+                   
+                    padding: 2em 5em 2em 0;
+                  
+                }
+
+            }
+        }
+
+        div.img-subscribe {
+            display: grid;
+            grid-template-columns: auto auto;
+            justify-content: space-between;
+
+            text-align: center;
+
+            div.image {
+                // background: url('/images/subscribe.jpeg');
+                width: 100%;
+                height: 20em;
+                object-fit: contain;
+            }
+
+            div.subscribe {
+                padding-top: 10em;
+
+
+                h1 {
+                    @extend %hti;
+                    color: black;
+                    padding-bottom: 2em;
+                    text-align: center;
+                    border-top: solid 0.19em $funkyColor;
+                    padding-top: 0.9em;
+                    width: 80%;
+                    margin: 0 auto;
+                }
+
+                form {
+                    padding-bottom: 2em;
+
+                    div {
+                        margin-bottom: 1em;
+
+                        input[type="text"],
+                        input[type="email"] {
+                            border: solid 0.1em;
+                            border-radius: 5px;
+                            width: 40%;
+                        }
+                    }
+
+
+                }
+
+                p {
+                    width: 57%;
+                    margin: 0 auto 2em;
+                    line-height: 1.5em;
+                }
+
+                footer {
+
+                    i {
+                        padding: 0.2em;
+                    }
+                }
+            }
+
+
+        }
+    }
